@@ -1,0 +1,54 @@
+body, .input, .login-btn, .fb-login, .sign-up p, .app p {
+    font-size: 90%;
+}
+
+main {
+    gap: 90px;
+    min-height: 90vh;
+}
+
+.form-div form {
+    padding: 2.7vh 1.8vw;
+}
+
+.form-div form.InstLogo {
+    width: 180px;
+    margin: 18px;
+}
+
+.input {
+    width: 81%;
+    padding: 0.54rem;
+    margin: 2.7px;
+}
+
+.login-btn {
+    width: 87.3%;
+    padding: 0.36rem;
+    margin: 7.2px 0;
+}
+
+.fb-login {
+    margin: 27px 0 9px 0;
+}
+
+.sign-up {
+    padding: 18px;
+    margin: 9px;
+}
+
+.app {
+    margin: 9px;
+}
+
+#play {
+    width: 171px;
+}
+
+#microsoft {
+    width: 121.5px;
+}
+
+#or::before, #or::after {
+    margin: 0 9px;
+}
