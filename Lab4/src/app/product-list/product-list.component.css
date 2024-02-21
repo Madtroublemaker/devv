@@ -1,0 +1,52 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 0 0 33.33%; /* 3 products per row */
+    padding: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Set maximum width for the images */
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.gallery-buttons button {
+    margin-right: 20px; /* Increase space between buttons */
+    margin-bottom: 10px; /* Add space below buttons */
+    padding: 8px 12px; /* Add padding to buttons */
+}
+
+.share-buttons button {
+    background-color: #4CAF50; /* Green background for Telegram share button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px; /* Increase space between Telegram share button and other buttons */
+    margin-bottom: 10px; /* Add space below Telegram share button */
+}
+
+.gallery-buttons button:hover,
+.share-buttons button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
