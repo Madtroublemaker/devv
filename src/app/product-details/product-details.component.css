@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add space below the gallery */
+}
+
+.product-image {
+    width: 250px; /* Increase image width */
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-buttons button {
+    margin-right: 10px;
+}
+
+.buy-button {
+    background-color: #4CAF50; /* Green color for Buy button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Add space between Buy button and price */
+}

@@ -1,0 +1,18 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <h4>₸{{ product.price }}</h4>
+    <!-- Image gallery -->
+    <div class="gallery">
+        <img [src]="product.images[product.currentImageIndex]" alt="Product Image" class="product-image">
+    </div>
+
+    <!-- Previous and Next buttons for image navigation -->
+    <div class="gallery-buttons">
+        <button type="button" (click)="prevImage()">Previous</button>
+        <button type="button" (click)="nextImage()">Next</button>
+    </div>
+    <button type="button" class="buy-button" (click)="addToCart(product)">Buy</button>
+    <p>{{ product.description }}</p>
+</div>
