@@ -1,0 +1,28 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product" class="product_box">
+  <div class="about_product">
+
+    <div *ngIf="product" class="img_div">
+      <img src="{{ product.imgGallery[currentImgIndex] }}" alt="{{ product.name }}">
+      <button type="button" (click)="nextImage(product)">Next</button>
+    </div>
+
+      
+    <div class="info">
+      <h3>{{ product.name }}</h3>
+      <h4>{{ product.price | currency }}</h4>
+      <p>Description: <br>{{ product.description }}</p>
+      <a href="{{product.link}}">Link to kaspi</a>
+      <button type="button" (click)="addToCart(product)">Buy</button>
+    </div>
+  </div>
+
+  <form [formGroup]="ratingForm" (ngSubmit)="submitRating(product)">
+    <label for="rating">Rate this product:</label>
+    <input type="number" id="rating" formControlName="rating" min="0" max="10" />
+    <button type="submit" [disabled]="ratingForm.invalid">Submit Rating</button>
+  </form>
+  
+  <p *ngIf="product.rating>=0">Rating: {{product.rating}}</p>
+</div>

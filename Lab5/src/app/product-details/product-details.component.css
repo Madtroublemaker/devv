@@ -1,0 +1,31 @@
+.product_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_product{
+    display: flex;
+    gap: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    gap: 10px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form button{
+    margin-left: 10px;
+}
